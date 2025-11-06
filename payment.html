@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - QuickCourier</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-indicator">Step 4 of 4</div>
+            <div class="progress-line">
+                <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="checkout-content">
+            <!-- Left Side - Payment Form -->
+            <div class="payment-section">
+                <h1 class="section-title">Payment</h1>
+
+                <!-- Payment Method -->
+                <div class="payment-method">
+                    <h2 class="subsection-title">Payment Method</h2>
+                    
+                    <!-- Credit/Debit Card Option -->
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="card" checked>
+                        <div class="option-content">
+                            <span class="option-label">Credit / Debit Card</span>
+                            <div class="card-logos">
+                                <span class="card-logo visa">💳</span>
+                                <span class="card-logo mastercard">💳</span>
+                                <span class="card-logo amex">💳</span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card Details Form -->
+                    <div class="card-form" id="cardForm">
+                        <div class="form-group">
+                            <label class="form-label">Card Number</label>
+                            <div class="input-wrapper">
+                                <input type="text" class="form-input" placeholder="0000 0000 0000 0000" maxlength="19">
+                                <span class="input-icon">💳</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Expiration Date</label>
+                                <input type="text" class="form-input" placeholder="MM / YY" maxlength="7">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">CVV</label>
+                                <div class="input-wrapper">
+                                    <input type="text" class="form-input" placeholder="123" maxlength="3">
+                                    <span class="input-icon">🔒</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PayPal Option -->
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="paypal">
+                        <div class="option-content">
+                            <span class="option-label">PayPal</span>
+                        </div>
+                    </label>
+
+                    <!-- Apple Pay Option -->
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="applepay">
+                        <div class="option-content">
+                            <span class="option-label">Apple Pay</span>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Security Badge -->
+                <div class="security-badge">
+                    <span class="badge-icon">🔒</span>
+                    <span class="badge-text">All transactions are secure and encrypted</span>
+                </div>
+            </div>
+
+            <!-- Right Side - Order Summary -->
+            <div class="summary-section">
+                <h2 class="summary-title">Order Summary</h2>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value">$249.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Delivery Fee</span>
+                        <span class="summary-value">$19.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Taxes & Fees</span>
+                        <span class="summary-value">$12.88</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row total-row">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-total">$ $280.88</span>
+                    </div>
+
+                    <div class="estimated-delivery">
+                        Estimated delivery: Thursday, 30-NOV
+                    </div>
+                </div>
+
+                <button class="btn-confirm" onclick="window.location.href='confirmation.html'">
+                    Confirm & Pay
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Card number formatting
+        const cardInput = document.querySelector('input[placeholder="0000 0000 0000 0000"]');
+        cardInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s/g, '');
+            let formattedValue = value.match(/.{1,4}/g)?.join(' ') || value;
+            e.target.value = formattedValue;
+        });
+
+        // Expiration date formatting
+        const expInput = document.querySelector('input[placeholder="MM / YY"]');
+        expInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s|\//g, '');
+            if (value.length >= 2) {
+                e.target.value = value.slice(0, 2) + ' / ' + value.slice(2, 4);
+            } else {
+                e.target.value = value;
+            }
+        });
+
+        // Payment method toggle
+        const paymentRadios = document.querySelectorAll('input[name="payment"]');
+        const cardForm = document.getElementById('cardForm');
+
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'card') {
+                    cardForm.style.display = 'block';
+                } else {
+                    cardForm.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

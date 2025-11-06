@@ -1,0 +1,173 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f3f3f5;
+    margin: 0;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .checkout-container {
+    width: 90%;
+    max-width: 1150px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  }
+  
+  /* Step Header */
+  .step-header {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 6px;
+    margin-top: 6px;
+  }
+  
+  .progress {
+    width: 60%;
+    height: 100%;
+    background: #ff8b61;
+    border-radius: 6px;
+  }
+  
+  /* Title */
+  h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    margin-bottom: 25px;
+    color: #888;
+  }
+  
+  /* Layout */
+  .content-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Extra Cards Grid */
+  .extras-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  
+  /* Card */
+  .extra-card {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 18px;
+    cursor: pointer;
+    background: white;
+    transition: .2s;
+  }
+  
+  .extra-card:hover {
+    border-color: #ff8b61;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .extra-card.selected {
+    border: 2px solid #ff8b61;
+    background: #fff9f5;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 22px;
+  }
+  
+  .checkmark {
+    font-size: 14px;
+    color: #ff8b61;
+    font-weight: bold;
+  }
+  
+  /* Text */
+  h4 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .extra-card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .price {
+    color: #ff8b61;
+    font-weight: bold;
+  }
+  
+  /* Summary Box */
+  .summary-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  
+  .summary-box h3 {
+    margin-bottom: 15px;
+  }
+  
+  .summary-line, .summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .summary-total {
+    font-weight: 700;
+    font-size: 17px;
+  }
+  
+  /* Buttons */
+  .footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  .btn-back {
+    background: transparent;
+    border: none;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .btn-continue {
+    background: #ff8b61;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .btn-continue:hover {
+    background: #ff6b3d;
+  }
+  

@@ -1,0 +1,173 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 30px 40px;
+  }
+  
+  /* HEADER */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .logo {
+    font-weight: 700;
+    color: #ff7b47;
+    font-size: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 12px;
+    font-weight: 500;
+  }
+  
+  .icons span {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  /* PROFILE CARD */
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffb57d, #ff7b47);
+  }
+  
+  .user-info h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .user-info p {
+    color: #777;
+    margin: 4px 0;
+  }
+  
+  .verified {
+    color: #2ecc71;
+    font-weight: 500;
+  }
+  
+  /* TABS */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 25px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #777;
+  }
+  
+  .tabs button.active {
+    border-bottom: 3px solid #ff7b47;
+    color: #ff7b47;
+  }
+  
+  /* SECTIONS */
+  .section {
+    margin-bottom: 25px;
+  }
+  
+  .section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .form-row input,
+  select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .address-card {
+    background: #fff6f1;
+    border: 1px solid #ffe3d1;
+    border-radius: 10px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .address-card p {
+    margin: 2px 0;
+  }
+  
+  .password-strength {
+    height: 6px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .password-strength .bar {
+    width: 50%;
+    height: 100%;
+    background: #ff7b47;
+  }
+  
+  /* SAVE BUTTON */
+  .save-btn-container {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .btn-save {
+    background: #ff7b47;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .btn-save:hover {
+    background: #ff915e;
+  }
+  

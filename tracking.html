@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order - QuickCourier</title>
+    <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📦</span>
+                    <span class="logo-text">QuickCourier</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="catalog.html" class="nav-link">Products</a>
+                <a href="#" class="nav-link">Orders</a>
+                <a href="#" class="nav-link">Help</a>
+            </div>
+            <div class="nav-right">
+                <button class="icon-btn search-btn">🔍</button>
+                <button class="icon-btn notification-btn">🔔</button>
+                <button class="icon-btn profile-btn" onclick="window.location.href='profile.html'">
+                    👤
+                </button>                  
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="tracking-container">
+        <!-- Left Side - Map -->
+        <div class="map-section">
+            <div class="map-header">
+                <h1 class="page-title">Track Your Order</h1>
+                <div class="order-badge">
+                    <span class="badge-label">Order:</span>
+                    <span class="badge-number">#QC-2024-8456</span>
+                </div>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <!-- San Francisco Map Illustration -->
+                    <svg class="map-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Water/Bay -->
+                        <rect x="0" y="0" width="600" height="500" fill="#A8D5E2"/>
+                        
+                        <!-- Land -->
+                        <path d="M 100 80 L 500 80 L 500 450 L 100 450 Z" fill="#E8F4E8"/>
+                        
+                        <!-- Streets Grid -->
+                        <g stroke="#D0D0D0" stroke-width="2">
+                            <!-- Vertical streets -->
+                            <line x1="150" y1="80" x2="150" y2="450"/>
+                            <line x1="200" y1="80" x2="200" y2="450"/>
+                            <line x1="250" y1="80" x2="250" y2="450"/>
+                            <line x1="300" y1="80" x2="300" y2="450"/>
+                            <line x1="350" y1="80" x2="350" y2="450"/>
+                            <line x1="400" y1="80" x2="400" y2="450"/>
+                            <line x1="450" y1="80" x2="450" y2="450"/>
+                            
+                            <!-- Horizontal streets -->
+                            <line x1="100" y1="130" x2="500" y2="130"/>
+                            <line x1="100" y1="180" x2="500" y2="180"/>
+                            <line x1="100" y1="230" x2="500" y2="230"/>
+                            <line x1="100" y1="280" x2="500" y2="280"/>
+                            <line x1="100" y1="330" x2="500" y2="330"/>
+                            <line x1="100" y1="380" x2="500" y2="380"/>
+                        </g>
+                        
+                        <!-- Route Line -->
+                        <polyline points="200,150 250,180 300,230 350,280 400,350" 
+                                  stroke="#FF6B35" stroke-width="4" fill="none" 
+                                  stroke-dasharray="10,5" stroke-linecap="round"/>
+                        
+                        <!-- Start Location (Store) -->
+                        <circle cx="200" cy="150" r="12" fill="#10B981"/>
+                        <circle cx="200" cy="150" r="8" fill="#FFFFFF"/>
+                        <text x="200" y="140" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="bold">📍</text>
+                        
+                        <!-- Current Location (Delivery Person) -->
+                        <circle cx="350" cy="280" r="16" fill="#FF6B35"/>
+                        <circle cx="350" cy="280" r="12" fill="#FFFFFF"/>
+                        <text x="350" y="285" text-anchor="middle" font-size="16">🚚</text>
+                        
+                        <!-- Destination (Your Location) -->
+                        <circle cx="400" cy="350" r="12" fill="#3B82F6"/>
+                        <circle cx="400" cy="350" r="8" fill="#FFFFFF"/>
+                        <text x="400" y="340" text-anchor="middle" fill="#1A1A1A" font-size="12" font-weight="bold">🏠</text>
+                        
+                        <!-- "San Francisco" Label -->
+                        <text x="300" y="470" text-anchor="middle" fill="#64748B" font-size="18" font-weight="600">San Francisco</text>
+                    </svg>
+                    
+                    <!-- Map Controls -->
+                    <div class="map-controls">
+                        <button class="map-btn zoom-in">+</button>
+                        <button class="map-btn zoom-out">−</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Order Info -->
+        <div class="info-section">
+            <!-- Your Courier Card -->
+            <div class="courier-card">
+                <h2 class="section-title">Your Courier</h2>
+                <div class="courier-info">
+                    <div class="courier-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23FF6B35'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='white' font-weight='bold'%3EJD%3C/text%3E%3C/svg%3E" alt="Courier">
+                    </div>
+                    <div class="courier-details">
+                        <h3 class="courier-name">John Doe</h3>
+                        <div class="courier-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-text">4.9 (234 trips)</span>
+                        </div>
+                        <div class="courier-vehicle">
+                            <span class="vehicle-icon">🏍️</span>
+                            <span class="vehicle-text">Blue Motorcycle - ABC123</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="courier-actions">
+                    <button class="action-btn btn-call">
+                        <span class="btn-icon">📞</span>
+                        <span>Call</span>
+                    </button>
+                    <button class="action-btn btn-message">
+                        <span class="btn-icon">💬</span>
+                        <span>Message</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Delivery Status Card -->
+            <div class="status-card">
+                <div class="status-header">
+                    <h2 class="section-title">Delivery Status</h2>
+                    <div class="eta-badge">
+                        <span class="eta-icon">⏱️</span>
+                        <span class="eta-text">Arriving in 12 min</span>
+                    </div>
+                </div>
+                
+                <div class="address-info">
+                    <span class="address-icon">📍</span>
+                    <span class="address-text">123 Market St, San Francisco, CA 94103</span>
+                </div>
+            </div>
+
+            <!-- Timeline Card -->
+            <div class="timeline-card">
+                <h2 class="section-title">Timeline</h2>
+                <div class="timeline">
+                    <!-- Timeline Item 1 - Completed -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Order Placed</h4>
+                            <p class="timeline-time">Today, 2:15 PM</p>
+                        </div>
+                        <div class="timeline-icon">✓</div>
+                    </div>
+
+                    <!-- Timeline Item 2 - Completed -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Order Confirmed</h4>
+                            <p class="timeline-time">Today, 2:18 PM</p>
+                        </div>
+                        <div class="timeline-icon">✓</div>
+                    </div>
+
+                    <!-- Timeline Item 3 - Completed -->
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Picked Up</h4>
+                            <p class="timeline-time">Today, 2:35 PM</p>
+                        </div>
+                        <div class="timeline-icon">✓</div>
+                    </div>
+
+                    <!-- Timeline Item 4 - Current -->
+                    <div class="timeline-item active">
+                        <div class="timeline-marker">
+                            <div class="marker-dot pulsing"></div>
+                            <div class="marker-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">In Transit</h4>
+                            <p class="timeline-time">Now</p>
+                        </div>
+                        <div class="timeline-icon pulse">🚚</div>
+                    </div>
+
+                    <!-- Timeline Item 5 - Pending -->
+                    <div class="timeline-item pending">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Delivered</h4>
+                            <p class="timeline-time">Expected 3:00 PM</p>
+                        </div>
+                        <div class="timeline-icon">⏳</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

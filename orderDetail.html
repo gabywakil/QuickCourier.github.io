@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details - QuickCourier</title>
+  <link rel="stylesheet" href="orderDetail.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="logo">QuickCourier</div>
+    <nav class="nav">
+      <a href="#">Statements</a>
+      <a href="#">Orders</a>
+      <a href="#">History</a>
+      <a href="#">Support</a>
+    </nav>
+    <div class="icons">
+      <a href="notification.html" style="text-decoration:none; color:inherit;">
+        <span>🔔</span>
+      </a>
+      <a href="profile.html" style="text-decoration:none; color:inherit;">
+        <span>👤</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="order-header">
+    <a href="orders.html" class="back-btn">← Back</a>
+    <h2>Order #QC-12345678</h2>
+    <span class="status in-transit">In Transit</span>
+  </div>
+
+  <!-- TRACKING PROGRESS -->
+  <div class="progress-container">
+    <div class="step completed">
+      <div class="circle">✔</div>
+      <p>Order Placed</p>
+    </div>
+    <div class="line completed"></div>
+    <div class="step completed">
+      <div class="circle">✔</div>
+      <p>Processing</p>
+    </div>
+    <div class="line completed"></div>
+    <div class="step active">
+      <div class="circle">🚚</div>
+      <p>In Transit</p>
+    </div>
+    <div class="line"></div>
+    <div class="step">
+      <div class="circle">🏠</div>
+      <p>Delivered</p>
+    </div>
+  </div>
+
+  <!-- DELIVERY INFO -->
+  <div class="section">
+    <h3>Delivery Info</h3>
+    <div class="delivery">
+      <div class="details">
+        <p><strong>John Carter</strong></p>
+        <p>420 Mission St, San Francisco, CA 94105</p>
+        <p>Estimated Delivery: Nov 8–9</p>
+      </div>
+      <div class="map"></div>
+    </div>
+  </div>
+
+  <!-- ORDER ITEMS -->
+  <div class="section">
+    <h3>Order Items</h3>
+    <div class="item">
+      <img src="https://i.imgur.com/QrM8g8u.png" alt="">
+      <div class="info">
+        <p class="name">Mercury Runner 2.0</p>
+        <p class="qty">Qty: 1</p>
+      </div>
+      <span class="price">$174.00</span>
+    </div>
+    <div class="item">
+      <img src="https://i.imgur.com/n1vHq4H.png" alt="">
+      <div class="info">
+        <p class="name">Red Ink T-Shirt</p>
+        <p class="qty">Qty: 2</p>
+      </div>
+      <span class="price">$49.00</span>
+    </div>
+    <div class="total">
+      <p>Subtotal: <span>$223.00</span></p>
+      <p>Shipping: <span>$20.00</span></p>
+      <hr>
+      <p class="grand-total">Total: <span>$243.00</span></p>
+    </div>
+  </div>
+
+  <!-- PAYMENT DETAILS -->
+  <div class="section">
+    <h3>Payment Details</h3>
+    <div class="payment">
+      <p><strong>Payment Method:</strong> Visa ending in **0420</p>
+      <p><strong>Transaction ID:</strong> TX-839410</p>
+      <p><strong>Status:</strong> <span class="paid">Paid</span></p>
+    </div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+    <button class="btn-outline">Download Receipt</button>
+    <button class="btn-outline">Track Package</button>
+    <button class="btn-orange">Contact Support</button>
+  </div>
+
+</div>
+
+</body>
+</html>

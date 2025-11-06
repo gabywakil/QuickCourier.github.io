@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - QuickCourier</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📦</span>
+                    <span class="logo-text">QuickCourier</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <button class="icon-btn notification-btn">
+                    🔔
+                </button>
+                <button class="icon-btn profile-btn">
+                    👤
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Confirmation Content -->
+    <div class="confirmation-container">
+        <div class="confirmation-card">
+            <!-- Success Icon -->
+            <div class="success-icon">
+                <div class="checkmark-circle">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle-bg" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1 class="confirmation-title">Order Confirmed! 🎉</h1>
+
+            <!-- Order Number -->
+            <div class="order-number">
+                <span class="order-label">Order:</span>
+                <span class="order-id">#QC-2024-8456</span>
+            </div>
+
+            <!-- Thank You Message -->
+            <p class="thank-you-message">
+                Thank you for your purchase! Your order has been confirmed and will be shipping soon. We'll send you an email with tracking details.
+            </p>
+
+            <!-- Order Details Card -->
+            <div class="order-details-card">
+                <div class="details-row">
+                    <div class="detail-item">
+                        <span class="detail-badge priority">PRIORITY</span>
+                        <div class="detail-info">
+                            <div class="detail-amount">$1,459.97</div>
+                            <div class="detail-label">Total Amount</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-divider"></div>
+
+                    <div class="detail-item">
+                        <span class="detail-icon">⭐</span>
+                        <div class="detail-info">
+                            <div class="detail-text">+5 (Larry Brown, CA 90210)</div>
+                            <div class="detail-label">Delivery Address</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='tracking.html'">
+                    Track My Order
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='principal.html'">
+                    Continue Shopping
+                </button>
+            </div>
+
+            <!-- Support Link -->
+            <a href="#" class="support-link">Contact Support</a>
+        </div>
+    </div>
+
+    <!-- Confetti Animation -->
+    <div class="confetti-container">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+    </div>
+
+    <script>
+        // Animate checkmark on load
+        window.addEventListener('load', function() {
+            const checkmark = document.querySelector('.checkmark-circle-bg');
+            const check = document.querySelector('.checkmark-check');
+            
+            setTimeout(() => {
+                checkmark.style.strokeDashoffset = '0';
+            }, 100);
+            
+            setTimeout(() => {
+                check.style.strokeDashoffset = '0';
+            }, 400);
+        });
+    </script>
+</body>
+</html>

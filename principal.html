@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCourier - Products</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📦</span>
+                    <span class="logo-text">QuickCourier</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="shoppingCard.html" class="icon-btn cart-btn">
+                    <span>🛒</span>
+                    <span class="cart-badge">3</span>
+                </a>                
+                <button class="icon-btn profile-btn" onclick="window.location.href='profile.html'">
+                    👤
+                </button> 
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">></span>
+                <span>Products</span>
+            </div>
+
+            <div class="categories-section">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul class="category-list">
+                    <li class="category-item active">
+                        <span class="category-icon">📚</span>
+                        <span class="category-name">Books</span>
+                        <span class="category-count">24</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="category-icon">🍿</span>
+                        <span class="category-name">Snacks</span>
+                        <span class="category-count">18</span>
+                    </li>
+                    <li class="category-item">
+                        <span class="category-icon">🎁</span>
+                        <span class="category-name">Accessories</span>
+                        <span class="category-count">32</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <main class="products-section">
+            <div class="products-header">
+                <h2 class="products-title">All Products</h2>
+                <div class="products-count">74 products found</div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #C77F4A 0%, #8B5A2B 100%);">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%233A3A3A' x='40' y='60' width='60' height='80' rx='2'/%3E%3Crect fill='%23D4A574' x='110' y='40' width='50' height='100' rx='2'/%3E%3C/svg%3E" alt="Premium Leather-bound Journal">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Premium Leather-bound Journal</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(128)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">$45.00</span>
+                                <button class="btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    
+
+                <!-- Product 2 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: #2C2C2C;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%234A4A4A' x='30' y='30' width='140' height='140' rx='8'/%3E%3Crect fill='%236B4423' x='40' y='80' width='30' height='60' rx='2'/%3E%3Crect fill='%236B4423' x='80' y='80' width='30' height='60' rx='2'/%3E%3Crect fill='%236B4423' x='120' y='80' width='30' height='60' rx='2'/%3E%3C/svg%3E" alt="Gourmet Dark Chocolate Collection">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Gourmet Dark Chocolate Collection</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(96)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$32.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #E8D5B7 0%, #C9A876 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cellipse cx='100' cy='120' rx='50' ry='20' fill='%23A67C52'/%3E%3Cellipse cx='100' cy='80' rx='45' ry='60' fill='%23D4A574'/%3E%3C/svg%3E" alt="Artisanal Coffee Beans">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Artisanal Coffee Beans</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$28.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23333' x='50' y='40' width='100' height='120' rx='8'/%3E%3Crect fill='%23555' x='60' y='50' width='80' height='60' rx='4'/%3E%3C/svg%3E" alt="Minimalist Fountain Pen">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Minimalist Fountain Pen</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(87)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$65.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #E8E8E8 0%, #C0C0C0 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cellipse cx='100' cy='100' rx='60' ry='40' fill='%23D4D4D4'/%3E%3Cellipse cx='100' cy='85' rx='50' ry='30' fill='%23E8E8E8'/%3E%3Crect fill='%23A0A0A0' x='90' y='130' width='20' height='30' rx='2'/%3E%3C/svg%3E" alt="Handcrafted Ceramic Mug">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Handcrafted Ceramic Mug</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(152)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$24.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #7FB069 0%, #588B4F 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%236B8E4E' x='60' y='60' width='25' height='80' rx='4'/%3E%3Crect fill='%236B8E4E' x='90' y='60' width='25' height='80' rx='4'/%3E%3Crect fill='%236B8E4E' x='120' y='60' width='25' height='80' rx='4'/%3E%3C/svg%3E" alt="Organic Green Tea Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Green Tea Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(174)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$38.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #C17B5C 0%, #8B5A3C 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23A0522D' d='M100,40 Q120,60 120,90 L120,130 Q120,150 100,160 Q80,150 80,130 L80,90 Q80,60 100,40 Z'/%3E%3Ccircle cx='100' cy='50' r='15' fill='%23D2691E'/%3E%3C/svg%3E" alt="Silk Scarf with Floral Print">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Scarf with Floral Print</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$52.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8B4513 0%, #654321 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%234A2511' x='60' y='60' width='80' height='40' rx='20'/%3E%3Crect fill='%234A2511' x='80' y='50' width='40' height='10' rx='5'/%3E%3C/svg%3E" alt="Designer Sunglasses">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Designer Sunglasses</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(67)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$89.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <a href="producto.html" style="text-decoration:none; color:inherit;">
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2C3E50 0%, #1A252F 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%231A1A1A' x='70' y='40' width='60' height='120' rx='8'/%3E%3Ccircle cx='100' cy='70' r='8' fill='%234A4A4A'/%3E%3C/svg%3E" alt="Smart Water Bottle">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Smart Water Bottle</h3>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(143)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$45.00</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn page-prev">‹</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn page-next">›</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

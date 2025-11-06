@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - QuickCourier</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="logo">QuickCourier</div>
+    <nav class="nav">
+      <a href="principal.html">Home</a>
+      <a href="orders.html">Orders</a>
+      <a href="#">History</a>
+      <a href="#">Support</a>
+    </nav>
+    <div class="icons">
+        <a href="notification.html" style="text-decoration:none; color:inherit;">
+            <span>🔔</span>
+        </a>          
+      <span>⚙️</span>
+    </div>
+  </header>
+
+  <!-- PROFILE CARD -->
+  <section class="profile-card">
+    <div class="avatar"></div>
+    <div class="user-info">
+      <h2>Jordan Smith</h2>
+      <p>jordan.smith@deepship.com</p>
+      <span class="verified">✔ Verified</span>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="active">Personal Info</button>
+    <button>Notifications</button>
+    <button>Billing</button>
+    <button>Security</button>
+  </div>
+
+  <!-- FORM SECTION -->
+  <div class="profile-sections">
+
+    <div class="section">
+      <h3>Personal Info</h3>
+      <div class="form-row">
+        <input type="text" placeholder="First Name" value="Jordan">
+        <input type="text" placeholder="Last Name" value="Smith">
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email" value="jordan.smith@deepship.com">
+        <input type="tel" placeholder="Phone" value="+1 (555) 123-4567">
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>My Addresses</h3>
+      <div class="address-card">
+        <p><strong>Home</strong></p>
+        <p>4730 Crystal Springs Dr, Los Angeles, CA</p>
+        <div class="icons">✏️ 🗑️</div>
+      </div>
+      <div class="address-card">
+        <p><strong>Work</strong></p>
+        <p>400 N Brand Blvd, Glendale, CA</p>
+        <div class="icons">✏️ 🗑️</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Security</h3>
+      <div class="form-row">
+        <input type="password" placeholder="Current Password">
+      </div>
+      <div class="form-row">
+        <input type="password" placeholder="New Password">
+        <input type="password" placeholder="Confirm New Password">
+      </div>
+      <div class="password-strength">
+        <div class="bar"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BUTTON -->
+  <div class="save-btn-container">
+    <button class="btn-save">Save Changes</button>
+  </div>
+
+</div>
+
+</body>
+</html>

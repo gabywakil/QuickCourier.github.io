@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders - QuickCourier</title>
+  <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="logo">QuickCourier</div>
+    <nav class="nav">
+      <a href="principal.html">Home</a>
+      <a href="#">Orders</a>
+      <a href="#">History</a>
+      <a href="#">Support</a>
+    </nav>
+    <div class="icons">
+      <span>🔔</span>
+      <span>👤</span>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <h2 class="page-title">My Orders</h2>
+
+  <!-- FILTER TABS -->
+  <div class="tabs">
+    <button class="active">Processing</button>
+    <button>Shipped</button>
+    <button>Delivered</button>
+    <button>Cancelled</button>
+  </div>
+
+  <!-- ORDERS LIST -->
+  <div class="orders-list">
+
+    <!-- Order 1 -->
+    <div class="order-card">
+      <div class="order-header">
+        <p class="order-id">Order #OE1254678</p>
+        <p class="order-date">October 24, 2023</p>
+      </div>
+
+      <div class="order-body">
+        <div class="order-status processing">PROCESSING</div>
+        <div class="order-products">
+          <img src="https://i.imgur.com/ZtR4k2m.png" alt="">
+          <img src="https://i.imgur.com/xMkgvxM.png" alt="">
+        </div>
+        <div class="order-total">$121.45</div>
+        <a href="orderDetail.html" class="view-details">View Details</a>
+      </div>
+    </div>
+
+    <!-- Order 2 -->
+    <div class="order-card">
+      <div class="order-header">
+        <p class="order-id">Order #OE1765432</p>
+        <p class="order-date">October 16, 2023</p>
+      </div>
+
+      <div class="order-body">
+        <div class="order-status shipped">SHIPPED</div>
+        <div class="order-products">
+          <img src="https://i.imgur.com/0fR5E9A.png" alt="">
+          <img src="https://i.imgur.com/n1vHq4H.png" alt="">
+        </div>
+        <div class="order-total">$48.60</div>
+        <a href="#" class="view-details">View Details</a>
+      </div>
+    </div>
+
+    <!-- Order 3 -->
+    <div class="order-card">
+      <div class="order-header">
+        <p class="order-id">Order #OE8351198</p>
+        <p class="order-date">October 10, 2023</p>
+      </div>
+
+      <div class="order-body">
+        <div class="order-status processing">PROCESSING</div>
+        <div class="order-products">
+          <img src="https://i.imgur.com/xMkgvxM.png" alt="">
+          <img src="https://i.imgur.com/ZtR4k2m.png" alt="">
+        </div>
+        <div class="order-total">$239.00</div>
+        <a href="#" class="view-details">View Details</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <span class="page-btn prev">◀</span>
+    <span class="page-number active">1</span>
+    <span class="page-number">2</span>
+    <span class="page-number">3</span>
+    <span class="page-btn next">▶</span>
+  </div>
+
+</div>
+
+</body>
+</html>
