@@ -164,14 +164,6 @@ body {
     align-items: center;
 }
 
-.image-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 3rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 400px;
-}
 
 .delivery-illustration svg {
     width: 100%;
@@ -473,3 +465,28 @@ body {
     color: #FF6B35;
     background: rgba(255, 107, 53, 0.1);
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 60px;       /* 🔹 Ajusta aquí el tamaño general */
+    height: auto;
+    margin-right: 8px;
+    object-fit: contain;  /* Mantiene proporciones sin deformar */
+  }
+  
+  .logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;      /* Cambia según el fondo de tu navbar */
+  }
+  

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - QuickCourier</title>
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">📦</span>
+                    <span class="logo-text">QuickCourier</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <div class="search-bar">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search for books..." class="search-input">
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="icon-btn cart-btn">
+                    <span>🛒</span>
+                    <span class="cart-badge">3</span>
+                </button>
+                <a href="login.html" class="btn-login">
+                    <span>Iniciar Sesión</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="catalog.html">Products</a>
+                <span class="separator">›</span>
+                <span>Books</span>
+            </div>
+
+            <div class="categories-section">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul class="category-list">
+                    <li class="category-item active">
+                        <span class="category-icon">📚</span>
+                        <span class="category-name">Books</span>
+                        <span class="category-count">24</span>
+                    </li>
+                    <li class="category-item" onclick="window.location.href='snacks.html'">
+                        <span class="category-icon">🍿</span>
+                        <span class="category-name">Snacks</span>
+                        <span class="category-count">18</span>
+                    </li>
+                    <li class="category-item" onclick="window.location.href='accessories.html'">
+                        <span class="category-icon">🎁</span>
+                        <span class="category-name">Accessories</span>
+                        <span class="category-count">32</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters-section">
+                <h3 class="sidebar-title">Filters</h3>
+                
+                <!-- Price Range -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Price Range</h4>
+                    <div class="price-inputs">
+                        <input type="number" placeholder="Min" class="price-input">
+                        <span class="price-separator">-</span>
+                        <input type="number" placeholder="Max" class="price-input">
+                    </div>
+                </div>
+
+                <!-- Genre Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Genre</h4>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Fiction</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Non-Fiction</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Mystery</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Biography</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Self-Help</span>
+                    </label>
+                </div>
+
+                <!-- Format Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Format</h4>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Hardcover</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Paperback</span>
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox">
+                        <span>Leather Bound</span>
+                    </label>
+                </div>
+
+                <button class="btn-apply-filters">Apply Filters</button>
+            </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <main class="products-section">
+            <div class="products-header">
+                <div class="header-left">
+                    <h2 class="products-title">Books</h2>
+                    <p class="products-subtitle">Discover our curated collection</p>
+                </div>
+                <div class="header-right">
+                    <div class="products-count">24 books found</div>
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8B4513 0%, #654321 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%234A2511' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='140' font-size='60' text-anchor='middle' fill='%23D4A574' font-weight='bold'%3EBOOK%3C/text%3E%3C/svg%3E" alt="Premium Leather-bound Journal">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge">Bestseller</div>
+                        <h3 class="product-name">Premium Leather-bound Journal</h3>
+                        <div class="product-meta">
+                            <span class="product-author">Classic Collection</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$45.00</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2C3E50 0%, #1A252F 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%231A1A1A' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='100' font-size='24' text-anchor='middle' fill='%23FFFFFF' font-weight='bold'%3EMOTIVATIONAL%3C/text%3E%3Ctext x='100' y='140' font-size='32' text-anchor='middle' fill='%23FF6B35' font-weight='bold'%3EPOWER%3C/text%3E%3C/svg%3E" alt="Motivational Power">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge new">New</div>
+                        <h3 class="product-name">The Power of Habit</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Charles Duhigg</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(245)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$28.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #C17B5C 0%, #8B5A3C 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23A0522D' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='120' font-size='28' text-anchor='middle' fill='%23F5DEB3' font-weight='bold'%3ECLASSIC%3C/text%3E%3Ctext x='100' y='160' font-size='20' text-anchor='middle' fill='%23F5DEB3'%3ETALES%3C/text%3E%3C/svg%3E" alt="Classic Tales">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Literature Collection</h3>
+                        <div class="product-meta">
+                            <span class="product-author">Various Authors</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$52.00</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23333' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='130' font-size='36' text-anchor='middle' fill='%2310B981' font-weight='bold'%3E$$$%3C/text%3E%3Ctext x='100' y='170' font-size='18' text-anchor='middle' fill='%23FFFFFF'%3EFINANCE%3C/text%3E%3C/svg%3E" alt="Finance Guide">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rich Dad Poor Dad</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Robert Kiyosaki</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(567)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$32.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23660000' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='140' font-size='48' text-anchor='middle' fill='%23FFD700' font-weight='bold'%3E?%3C/text%3E%3C/svg%3E" alt="Mystery Novel">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge">Popular</div>
+                        <h3 class="product-name">The Silent Patient</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Alex Michaelides</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(423)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$26.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #4169E1 0%, #0000CD 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23000080' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='120' font-size='24' text-anchor='middle' fill='%23FFFFFF' font-weight='bold'%3ESCIENCE%3C/text%3E%3Ctext x='100' y='160' font-size='20' text-anchor='middle' fill='%23FFFFFF'%3EFICTION%3C/text%3E%3C/svg%3E" alt="Science Fiction">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Project Hail Mary</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Andy Weir</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(892)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$29.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #228B22 0%, #006400 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23013220' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='130' font-size='32' text-anchor='middle' fill='%2390EE90' font-weight='bold'%3ECOOK%3C/text%3E%3Ctext x='100' y='170' font-size='24' text-anchor='middle' fill='%2390EE90'%3EBOOK%3C/text%3E%3C/svg%3E" alt="Cookbook">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">The Art of Cooking</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Gordon Ramsay</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(334)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$38.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%23FF8C00' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='140' font-size='36' text-anchor='middle' fill='%23FFFFFF' font-weight='bold'%3E✨%3C/text%3E%3C/svg%3E" alt="Self Help">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge">Trending</div>
+                        <h3 class="product-name">Atomic Habits</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by James Clear</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(1.2K)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$27.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" onclick="window.location.href='product-detail.html'">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8B008B 0%, #4B0082 100%);">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 280'%3E%3Crect fill='%232E0854' x='40' y='20' width='120' height='240' rx='4'/%3E%3Ctext x='100' y='130' font-size='28' text-anchor='middle' fill='%23DA70D6' font-weight='bold'%3EPOETRY%3C/text%3E%3C/svg%3E" alt="Poetry">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Milk and Honey</h3>
+                        <div class="product-meta">
+                            <span class="product-author">by Rupi Kaur</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="rating-count">(678)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$18.99</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn page-prev">‹</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn page-next">›</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
