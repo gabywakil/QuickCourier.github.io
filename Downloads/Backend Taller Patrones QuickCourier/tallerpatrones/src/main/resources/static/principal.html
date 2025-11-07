@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickCourier - Catálogo de productos</title>
+<link rel="stylesheet" href="principal.css">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="nav-left">
+				<a href="index.html" class="logo"> <span class="logo-icon">📦</span>
+					<span class="logo-text">QuickCourier</span>
+				</a>
+			</div>
+			<div class="nav-center">
+				<div class="search-bar">
+					<span class="search-icon">🔍</span> <input type="text"
+						placeholder="Buscar productos..." class="search-input"
+						id="searchInput">
+				</div>
+			</div>
+			<div class="nav-right">
+				<!-- Carrito (por ahora solo visual) -->
+				<button class="icon-btn" id="cartBtn">
+					🛒 <span class="cart-badge" id="cartCount">0</span>
+				</button>
+
+				<!-- Perfil (podemos usar esto después para mostrar nombre) -->
+				<button class="icon-btn profile-btn" type="button" id="profileBtn">
+					👤</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<div class="main-container">
+		<!-- Sidebar -->
+		<aside class="sidebar">
+			<div class="breadcrumb">
+				<a href="index.html">Inicio</a> <span class="separator">></span> <span>Catálogo</span>
+			</div>
+
+			<div class="categories-section">
+				<h3 class="sidebar-title">Categorías</h3>
+				<ul class="category-list">
+					<!-- Todos -->
+					<li class="category-item active" data-category="TODOS"><span
+						class="category-icon">🛒</span> <span class="category-name">Todos</span>
+						<span class="category-count" id="countTodos">0</span></li>
+					<!-- Libros -->
+					<li class="category-item" data-category="LIBRO"><span
+						class="category-icon">📚</span> <span class="category-name">Libros</span>
+						<span class="category-count" id="countLibros">0</span></li>
+					<!-- Snacks -->
+					<li class="category-item" data-category="SNACK"><span
+						class="category-icon">🍿</span> <span class="category-name">Snacks</span>
+						<span class="category-count" id="countSnacks">0</span></li>
+					<!-- Accesorios -->
+					<li class="category-item" data-category="ACCESORIO"><span
+						class="category-icon">🎁</span> <span class="category-name">Accesorios</span>
+						<span class="category-count" id="countAccesorios">0</span></li>
+				</ul>
+			</div>
+		</aside>
+
+		<!-- Products Grid -->
+		<main class="products-section">
+			<div class="products-header">
+				<h2 class="products-title" id="productsTitle">Todos los
+					productos</h2>
+				<div class="products-count" id="productsCount">0 productos
+					encontrados</div>
+			</div>
+
+			<div class="products-grid" id="productsGrid">
+				<!-- Aquí el JS inyecta las tarjetas de productos -->
+			</div>
+
+			<!-- Paginación (de momento decorativa, sin lógica) -->
+			<div class="pagination">
+				<button class="page-btn page-prev" disabled>‹</button>
+				<button class="page-btn active">1</button>
+				<button class="page-btn" disabled>2</button>
+				<button class="page-btn page-next" disabled>›</button>
+			</div>
+		</main>
+	</div>
+
+	<script src="principal.js"></script>
+</body>
+</html>

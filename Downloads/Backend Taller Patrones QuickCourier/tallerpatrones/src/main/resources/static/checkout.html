@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping Details - QuickCourier</title>
+<link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+<div class="checkout-wrapper">
+
+    <!-- TOP NAV -->
+    <header class="top-nav">
+        <div class="logo">QuickCourier</div>
+        <div class="profile-icons">⚙️</div>
+    </header>
+
+    <!-- STEPS -->
+    <div class="steps-container">
+        <div class="step active">
+            <div class="circle active">1</div>
+            <span>Shipping</span>
+        </div>
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Payment</span>
+        </div>
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Review</span>
+        </div>
+        <div class="step">
+            <div class="circle">4</div>
+            <span>Confirmation</span>
+        </div>
+    </div>
+
+    <div class="checkout-content">
+
+        <!-- FORM -->
+        <div class="form-box">
+            <h3>Shipping Details</h3>
+
+            <input type="text" placeholder="Full Name" class="input-field">
+            <input type="text" placeholder="Street Address" class="input-field">
+            <input type="text" placeholder="Apartment, suite, etc. (Optional)" class="input-field">
+
+            <div class="flex-row">
+                <input type="text" placeholder="City" class="input-field">
+                <input type="text" placeholder="State / Province" class="input-field">
+            </div>
+
+            <div class="flex-row">
+                <input type="text" placeholder="ZIP / Postal Code" class="input-field">
+                <select class="input-field">
+                    <option>Country / Region</option>
+                </select>
+            </div>
+
+            <input type="text" placeholder="Phone Number" class="input-field">
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+
+            <div class="item">
+                <img src="https://i.imgur.com/oft3zXj.png">
+                <div>
+                    <p>TrailBlazer X1</p>
+                    <span>$120.00</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://i.imgur.com/dG5KxqM.png">
+                <div>
+                    <p>CityScape Loafers</p>
+                    <span>$85.50</span>
+                </div>
+            </div>
+
+            <div class="line"><span>Subtotal</span><span>$205.50</span></div>
+            <div class="line"><span>Shipping</span><span>Calculated at next step</span></div>
+            <hr>
+            <div class="total"><span>Total</span><span>$205.50</span></div>
+        </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="bottom-buttons">
+        <button class="btn-back" onclick="window.location.href='shoppingCard.html'">Back to Cart</button>
+        <button class="btn-next" onclick="window.location.href='extras.html'">Continue</button>
+    </div>
+
+</div>
+
+</body>
+</html>

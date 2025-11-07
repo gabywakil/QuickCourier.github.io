@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - QuickCourier</title>
+  <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="logo">QuickCourier</div>
+    <nav class="nav">
+      <a href="principal.html">Home</a>
+      <a href="#">Orders</a>
+      <a href="#">History</a>
+      <a href="#">Support</a>
+    </nav>
+    <div class="icons">
+      <span>🔔</span>
+      <span>👤</span>
+    </div>
+  </header>
+
+  <!-- TITLE -->
+  <h2 class="page-title">Notifications</h2>
+
+  <!-- FILTER TABS -->
+  <div class="tabs">
+    <button class="active">All</button>
+    <button>Unread</button>
+    <button>System</button>
+    <button>Promotions</button>
+  </div>
+
+  <!-- NOTIFICATIONS LIST -->
+  <div class="notifications-list">
+
+    <!-- Notification 1 -->
+    <div class="notification-card unread">
+      <div class="icon">📦</div>
+      <div class="content">
+        <p class="title">Your order #OE1254678 has been shipped!</p>
+        <p class="desc">Expected delivery between Nov 6–8.</p>
+        <span class="date">5 minutes ago</span>
+      </div>
+      <div class="actions">
+        <button class="mark-btn">Mark as read</button>
+      </div>
+    </div>
+
+    <!-- Notification 2 -->
+    <div class="notification-card">
+      <div class="icon">💳</div>
+      <div class="content">
+        <p class="title">Payment confirmed for order #OE1765432</p>
+        <p class="desc">Thank you for your purchase! You can track it in “My Orders”.</p>
+        <span class="date">Yesterday</span>
+      </div>
+      <div class="actions">
+        <button class="delete-btn">🗑️</button>
+      </div>
+    </div>
+
+    <!-- Notification 3 -->
+    <div class="notification-card unread promo">
+      <div class="icon">🎁</div>
+      <div class="content">
+        <p class="title">Exclusive offer for you 🎉</p>
+        <p class="desc">Get 15% off your next express delivery before Nov 10.</p>
+        <span class="date">2 days ago</span>
+      </div>
+      <div class="actions">
+        <button class="mark-btn">Mark as read</button>
+      </div>
+    </div>
+
+    <!-- Notification 4 -->
+    <div class="notification-card system">
+      <div class="icon">⚙️</div>
+      <div class="content">
+        <p class="title">System maintenance scheduled</p>
+        <p class="desc">The app will be temporarily unavailable on Nov 12 from 2–4 AM.</p>
+        <span class="date">3 days ago</span>
+      </div>
+      <div class="actions">
+        <button class="delete-btn">🗑️</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

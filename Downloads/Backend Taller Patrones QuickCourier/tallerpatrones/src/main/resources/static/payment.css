@@ -1,0 +1,384 @@
+/* ==========================================
+   QUICKCOURIER - CHECKOUT PAYMENT PAGE
+   ========================================== */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background: #F8F9FA;
+    color: #1A1A1A;
+    padding: 2rem;
+}
+
+/* ==========================================
+   CHECKOUT CONTAINER
+   ========================================== */
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   PROGRESS BAR
+   ========================================== */
+.progress-bar {
+    margin-bottom: 3rem;
+}
+
+.progress-indicator {
+    font-size: 0.875rem;
+    color: #64748B;
+    margin-bottom: 0.75rem;
+}
+
+.progress-line {
+    width: 100%;
+    height: 4px;
+    background: #E2E8F0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #FF6B35;
+    transition: width 0.3s ease;
+}
+
+/* ==========================================
+   CHECKOUT CONTENT
+   ========================================== */
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+}
+
+/* ==========================================
+   PAYMENT SECTION
+   ========================================== */
+.payment-section {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 2rem;
+}
+
+.subsection-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   PAYMENT OPTIONS
+   ========================================== */
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 2px solid #E2E8F0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.payment-option:hover {
+    border-color: #FF6B35;
+    background: #FFF5F0;
+}
+
+.payment-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #FF6B35;
+}
+
+.payment-option input[type="radio"]:checked ~ .option-content {
+    color: #FF6B35;
+}
+
+.option-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.card-logos {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-logo {
+    font-size: 1.5rem;
+}
+
+/* ==========================================
+   CARD FORM
+   ========================================== */
+.card-form {
+    padding: 1.5rem;
+    background: #F8F9FA;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.form-input:focus {
+    border-color: #FF6B35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.input-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #94A3B8;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* ==========================================
+   SECURITY BADGE
+   ========================================== */
+.security-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: #F0FDF4;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.badge-icon {
+    font-size: 1.5rem;
+}
+
+.badge-text {
+    font-size: 0.875rem;
+    color: #166534;
+    font-weight: 500;
+}
+
+/* ==========================================
+   SUMMARY SECTION
+   ========================================== */
+.summary-section {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+.summary-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 1.5rem;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-label {
+    font-size: 0.9375rem;
+    color: #64748B;
+}
+
+.summary-value {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.summary-divider {
+    height: 1px;
+    background: #E2E8F0;
+    margin: 0.5rem 0;
+}
+
+.total-row {
+    margin-top: 0.5rem;
+}
+
+.total-row .summary-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.summary-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF6B35;
+}
+
+.estimated-delivery {
+    font-size: 0.875rem;
+    color: #64748B;
+    text-align: center;
+    padding: 1rem;
+    background: #F8F9FA;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* ==========================================
+   CONFIRM BUTTON
+   ========================================== */
+.btn-confirm {
+    width: 100%;
+    padding: 1rem;
+    background: #FF6B35;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-confirm:hover {
+    background: #ff5722;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+.btn-confirm:active {
+    transform: translateY(0);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 968px) {
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-section {
+        position: static;
+        order: -1;
+    }
+
+    body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .payment-section,
+    .summary-section {
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .card-logos {
+        display: none;
+    }
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.checkout-content {
+    animation: fadeIn 0.4s ease-out;
+}

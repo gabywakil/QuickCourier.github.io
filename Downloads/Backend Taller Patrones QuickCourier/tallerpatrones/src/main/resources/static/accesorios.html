@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories - QuickCourier</title>
+  <link rel="stylesheet" href="accesorios.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="QuickCourier Logo" class="logo-img">
+        <span class="logo-text">QuickCourier</span>
+      </a>
+    </div>
+
+    <div class="nav-center">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search accessories..." class="search-input">
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn cart-btn" onclick="window.location.href='shopping-cart.html'">
+        🛒
+        <span class="cart-badge">3</span>
+      </button>
+      <button class="icon-btn profile-btn" onclick="window.location.href='profile.html'">👤</button>
+      <button class="icon-btn notif-btn" onclick="window.location.href='notifications.html'">🔔</button>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTAINER -->
+<main class="main-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="separator">›</span>
+      <span>Accessories</span>
+    </div>
+
+    <section class="filters-section">
+      <h3 class="sidebar-title">Filters</h3>
+
+      <div class="filter-group">
+        <h4 class="filter-title">Price Range</h4>
+        <div class="price-inputs">
+          <input type="number" class="price-input" placeholder="Min">
+          <span class="price-separator">-</span>
+          <input type="number" class="price-input" placeholder="Max">
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4 class="filter-title">Category</h4>
+        <label class="filter-checkbox">
+          <input type="checkbox"> Tech Accessories
+        </label>
+        <label class="filter-checkbox">
+          <input type="checkbox"> Fashion Accessories
+        </label>
+        <label class="filter-checkbox">
+          <input type="checkbox"> Home Gadgets
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h4 class="filter-title">Availability</h4>
+        <label class="filter-checkbox">
+          <input type="checkbox"> In Stock
+        </label>
+        <label class="filter-checkbox">
+          <input type="checkbox"> On Sale
+        </label>
+      </div>
+
+      <button class="btn-apply-filters">Apply Filters</button>
+    </section>
+  </aside>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section">
+    <div class="products-header">
+      <h2>Accessories</h2>
+      <select class="sort-dropdown">
+        <option>Sort by: Featured</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Newest Arrivals</option>
+      </select>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('assets/images/earbuds.jpg');">
+          <span class="product-tag">New</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="product-title">Wireless Earbuds</p>
+            <p class="product-author">Noise Cancelling, 20hr Battery</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$59.99</span>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('assets/images/smartwatch.jpg');"></div>
+        <div class="product-info">
+          <div>
+            <p class="product-title">Smart Watch Pro</p>
+            <p class="product-author">Health Tracking, GPS, Bluetooth</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$149.00</span>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('assets/images/phonecase.jpg');">
+          <span class="product-tag">Sale</span>
+        </div>
+        <div class="product-info">
+          <div>
+            <p class="product-title">Silicone Phone Case</p>
+            <p class="product-author">Shockproof, Slim Fit</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$14.99</span>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('assets/images/wallet.jpg');"></div>
+        <div class="product-info">
+          <div>
+            <p class="product-title">Leather Wallet</p>
+            <p class="product-author">Minimalist, RFID Protection</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$39.00</span>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <span class="page-btn">◀</span>
+      <span class="page-number active">1</span>
+      <span class="page-number">2</span>
+      <span class="page-number">3</span>
+      <span class="page-btn">▶</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 QuickCourier — All rights reserved.
+</footer>
+
+</body>
+</html>
